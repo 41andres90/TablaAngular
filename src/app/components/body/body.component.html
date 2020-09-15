@@ -1,0 +1,27 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-sm">
+            <table class="table table-bordered table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col" colspan="4">EMPLEADOS</th>
+                    </tr>
+
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">DIRECCION</th>
+                        <th scope="col">TELEFONO</th>
+                    </tr>
+                    <tr *ngFor="let emp of empleados; let i=index">
+                    <th scope="row">{{i+1}}</th>
+                    <td>{{emp.nombre}}</td>
+                    <td>{{emp.direccion}}</td>
+                    <td>{{emp.telefono}}</td>
+                </tr>
+                </thead>
+                
+            </table>
+        </div>
+    </div>
+</div>
